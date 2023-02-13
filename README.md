@@ -4,7 +4,7 @@ Submitted by: Ariadna Franchino
 
 Flixster P2 is an app that introduces networking call and table view to display a list of current movies plus their information. This includes the title, release date, poster, popularity, voter average, total number of votes, an overview, and similar movies.
 
-Time spent: 12 hours spent in total
+Time spent: 9 hours spent in total
 
 ## Required Features
 
