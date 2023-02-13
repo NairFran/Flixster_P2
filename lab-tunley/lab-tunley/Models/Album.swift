@@ -12,5 +12,5 @@ struct AlbumSearchResponse: Decodable {
 }
 
 struct Album: Decodable {
-    let artworkUrl100: URL
+    let poster_path: String
 }

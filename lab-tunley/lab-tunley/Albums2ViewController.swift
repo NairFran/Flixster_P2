@@ -1,5 +1,5 @@
 //
-//  AlbumsViewController.swift
+//  Albums2ViewController.swift
 //  lab-tunley
 //
 //  Created by Walter Franchino on 2/12/23.
@@ -8,7 +8,7 @@
 import UIKit
 import Nuke
 
-class AlbumsViewController: UIViewController, UICollectionViewDataSource {
+class Albums2ViewController: UIViewController, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         albums.count
     }
@@ -30,7 +30,7 @@ class AlbumsViewController: UIViewController, UICollectionViewDataSource {
         super.viewDidLoad()
         collectionView.dataSource = self
         
-        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=74c5c7b3aa58b97665ab0e2531db6044&language=en-US&page=1")!
+        let url = URL(string: "https://api.themoviedb.org/3/movie/758009/similar?api_key=74c5c7b3aa58b97665ab0e2531db6044&language=en-US&page=1")!
         let request = URLRequest(url: url)
 
         let task = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
